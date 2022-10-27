@@ -13,4 +13,4 @@ QUOTE_ALL = 1
 
 # save the dataset in a way that Hugging Face Transformers can read (i.e. with double quotes)
 df = pd.read_csv(YOUR_CSV_DATASET)
-df.to_csv(FIXED_CSV_DATASET, quoting=QUOTE_ALL, quotechar=QUOTE_CHAR)
+df.to_csv(FIXED_CSV_DATASET, quoting=QUOTE_ALL, quotechar=QUOTE_CHAR, index=False)
