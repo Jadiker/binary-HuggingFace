@@ -4,7 +4,7 @@ Disclaimer: it looks like Hugging Face may be changing how `load_metric` works s
 
 ## Create your datasets
 First, put your datasets into the following format:
-The first column should be called "sentence1", and should be string values
+The first column should be called "sentence1", and should be string values.
 If you have a dataset of sentence pairs (e.g. [MRPC](https://paperswithcode.com/dataset/mrpc)), then your next column should be called "sentence2", and should contain string values.
 Your final column should be called "label", and should contain integer values.
 
