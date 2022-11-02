@@ -288,8 +288,8 @@ def main():
         data_files = {"train": data_args.train_file, "validation": data_args.validation_file}
 
         # Get the test dataset: you can provide your own CSV/JSON test file (see below)
-        # when you use `do_predict` without specifying a GLUE benchmark task.
-        if training_args.do_predict:
+        # without specifying a GLUE benchmark task.
+        if training_args.do_predict or data_args.test_file is not None:
             if data_args.test_file is not None:
                 train_extension = data_args.train_file.split(".")[-1]
                 test_extension = data_args.test_file.split(".")[-1]
