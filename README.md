@@ -30,7 +30,7 @@ WANDB_ENTITY = "wandb_entity"
 ## Run the Code
 ### Train
 In order to train, use the following command:
-`python main.py --train_file TRAIN.CSV --validation_file VALIDATION.CSV --test_file TEST.CSV --do_train --model_name YOUR_MODEL_NAME --overwrite_output_dir --eval_steps 100 --evaluation_strategy steps --save_strategy no --report_to wandb --run_name RUN_NAME --output_dir RUN_NAME`
+`python main.py --train_file TRAIN.CSV --validation_file VALIDATION.CSV --test_file TEST.CSV --do_train --model_name YOUR_MODEL_NAME --overwrite_output_dir --eval_steps 100 --evaluation_strategy steps --save_strategy steps --report_to wandb --run_name RUN_NAME --output_dir RUN_NAME`
 
 TRAIN.CSV should be your train dataset
 VALIDATION.CSV should be your validation (or test if you don't have validation) dataset
